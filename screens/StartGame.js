@@ -14,7 +14,13 @@ const StartGame = () => {
         <Text style={{fontWeight:'bold', color:'black'}}>
           Select Number
         </Text>
-        <Input style = {styles.inputStyle}/>
+        <Input
+         style = {styles.inputStyle} 
+         autoCapitalize = 'none'
+         blurOnSubmit
+         autoCorrect = {false}
+         keyboardType="numeric"
+         />
         <View style={styles.buttonContainer}>
           <View style={styles.buttonWidth}>
             <Button title='Reset' color={Colors.accent} />
